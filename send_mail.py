@@ -41,7 +41,7 @@ def test_mail():
 	to = ["emil_id1", "email_id2"]
 	sub = "Your subject"
 	body = "Type your body here,\n Regards,\n Prakash317"
-  attachmentFilePath = ["home/tl023/file.txt","home//tl023/file2.pdf"]
+  attachmentFilePath = ["home/tl023/file.txt","home/tl023/file2.pdf"]
   email_sender = EmailSender()
   attach = email_sender.build_attachment(attachmentFilePath)
   response = email_sender.send_mail(sender, to, sub, body, attach)
